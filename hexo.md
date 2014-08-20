@@ -53,21 +53,19 @@ themes\landscape\layout\_partial\after-footer.ejs
 
 ### 部署时提示  **"spawn ENOENT"**的异常信息  
 
-``` Log
-[error] Error: spawn ENOENT  
- Error: spawn ENOENT  
- at errnoException (child_process.js:1000:11)  
- at Process.ChildProcess._handle.onexit (child_process.js:791:34)  
-```
+> [error] Error: spawn ENOENT  
+>  Error: spawn ENOENT  
+>  at errnoException (child_process.js:1000:11)  
+>  at Process.ChildProcess._handle.onexit (child_process.js:791:34)  
+
 
 **解决办法:** 在命令行里输入git, 回车, 如果无法识别则需要把git安装目录下的bin目录文件路径加到环境变量path中.  
 
 
 ### 部署时提示  **"Not a git repository"**的异常信息  
 
-``` Log
-fatal: Not a git repository (or any of the parent directories): .git  
-```
+> fatal: Not a git repository (or any of the parent directories): .git  
+
 
 **解决办法:** 删掉.deploy目录试试.  
 

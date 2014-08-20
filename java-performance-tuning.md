@@ -7,19 +7,17 @@ categories: [java]
 ## thread dump分析    
   - 用 **kill -3 pid** 命令生成thread dump文件  
   - 可以用 **threadlogic** 工具导入生成的dump文件进行分析  
-  - 参考资源:  
+  - 参考资料:  
     - [三个实例演示](http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html)  
     - [Tomcat thread dump分析](http://www.jiacheo.org/blog/279)  
   
 ## heap dump分析  
   - 用jmap命令生成dump文件:   
-    ``` java  
-    jmap -dump:format=b,file=/tmp/logs/dump.bin pid   
-    ```
+    > jmap -dump:format=b,file=/tmp/logs/dump.bin pid   
   - jmap命令会 **stop the world** , 生产环境需谨慎处理  
   - 安装 **MAT** 工具,导入dump文件进行分析  
   - 可以在linux环境下分析, 生成网页格式的报告拿回win环境下查看  
-  - 参考资源:  
+  - 参考资料:  
     - [MAT](http://www.eclipse.org/mat)  
   
 ## cpu load average too high  
@@ -31,9 +29,7 @@ categories: [java]
     
 ## gc log分析  
   - 修改jvm参数打印gc log  
-    ``` java  
-    -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/path/logs/jvm.log  
-    ```  
+    > -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/path/logs/jvm.log  
   - 用 **GCLogViewer** 工具导入gc log进行分析  
   
 ## JVM参数调优   
@@ -76,13 +72,11 @@ categories: [java]
   
 ### 其他  
   - 日志分析  
-    ``` java  
-    -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/path/logs/jvm.log  
-    -XX:+HeapDumpOnOutOfMemoryError  
-    ```
+    > -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/path/logs/jvm.log  
+    > -XX:+HeapDumpOnOutOfMemoryError  
   - Minor GC、Major GC(Full GC)  
   - Full GC: Stop The World  
-  - 参考资源  
+  - 参考资料:  
     - [JVM调优总结](http://unixboy.iteye.com/blog/174173)  
     - [深入浅出Java垃圾回收机制](http://my.oschina.net/xishuixixia/blog/131212)  
     - [Java 6 JVM参数选项大全](http://kenwublog.com/docs/java6-jvm-options-chinese-edition.htm)  
