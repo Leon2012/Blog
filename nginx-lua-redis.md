@@ -52,7 +52,7 @@ Lua操作cookie和redis主要用到两个library:
 ## 示例
 Lua通过解析Cookie读取Redis数据进行分流
 
-#### Lua脚本1
+#### Lua脚本
 
 
 ``` lua
