@@ -183,7 +183,7 @@ upstream proxy_b {
 ```
 
 - server配置
-``` shell
+```
 location /lua {
             content_by_lua_file /home/wangq/work/nginx/lua/hello.lua;
     }
