@@ -15,6 +15,8 @@ categories: [hexo]
 - **GitHub Pages**  
   可以很容易部署托管到GitHub上, 另外也可以支持GitCafe.  
 
+<!--more-->
+
 关于blog产品比较, 知乎上有个相关问题也可以参考下:  
 [这些博客程序有什么特点](http://www.zhihu.com/question/21981094)  
 

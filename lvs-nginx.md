@@ -21,6 +21,8 @@ categories: [middleware]
   - 可以根据二级域名和子目录进行分流, 可以在一个域名下挂多个Web应用.  
 - Tomcat  
 
+<!--more-->
+
 参考资料:  
 - [Keepalived官网推荐的lvs集群文档](http://www.keepalived.org/pdf/sery-lvs-cluster.pdf)  
 - [LVS和Nginx比较分析](http://my.oschina.net/wmsjhappy/blog/273754)  

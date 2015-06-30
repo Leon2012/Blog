@@ -19,8 +19,6 @@ categories: [linux]
 官网其实也有[说明](http://wiki.centos.org/Manuals/ReleaseNotes/CentOS6.5)的  
 > The installer needs at least 406MB of memory to work. Text mode will automatically be used if the system has less than 632MB of memory.  
 
-
-
 ### 挂载共享目录  
 参考[这里](http://jingyan.baidu.com/article/2fb0ba40541a5900f2ec5f07.html)配置.  
 

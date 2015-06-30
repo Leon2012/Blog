@@ -10,7 +10,7 @@ categories: [java]
   - 参考资料:  
     - [三个实例演示](http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html)  
     - [Tomcat thread dump分析](http://www.jiacheo.org/blog/279)  
-  
+ 
 ## heap dump分析  
   - 用jmap命令生成dump文件:   
     > jmap -dump:format=b,file=/tmp/logs/dump.bin pid   
@@ -31,6 +31,8 @@ categories: [java]
   - 修改jvm参数打印gc log  
     > -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/path/logs/jvm.log  
   - 用 **GCLogViewer** 工具导入gc log进行分析  
+
+<!--more-->
   
 ## JVM参数调优   
 ### Heap堆参数设置   

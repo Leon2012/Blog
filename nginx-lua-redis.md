@@ -11,6 +11,8 @@ categories: [middleware]
 使用nginx做负载均衡和反向代理, nginx内嵌lua模块, 解析并执行lua编写的脚本逻辑, 可以通过lua解析cookie以及访问redis, 而一些灰度分流的策略就是放在redis里通过cookie关联.
 原理和[「利用nginx+lua+memcache实现灰度发布档」](http://www.cnblogs.com/wenbiao/p/3227998.html)这篇文章有点类似, 只是我们使用redis替换了memcache, 并且加入了cookie的识别, 比单纯的IP分流更强大一些.
 
+<!--more-->
+
 update: 
 这套方案有些复杂, 还有个简单的方案: 通过后端应用按照一定的灰度规则, 在用户第一次访问时把灰度逻辑写入cookie, 然后直接在nginx里判断cookie分流到对应的灰度服务器. 
 
