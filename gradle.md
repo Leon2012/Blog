@@ -16,7 +16,7 @@ categories: opensource
 ### 配置gradle代理
 如果因为一些原因(例如公司网络管控)无法直接访问仓库地址, 可以通过配置http代理的方式访问.
 在gradle默认缓存目录下, 新增配置文件gradle.properties  
-```
+``` text
 systemProp.http.proxyHost=Proxy Server
 systemProp.http.proxyPort=Proxy port
 systemProp.http.proxyUser=Proxy User

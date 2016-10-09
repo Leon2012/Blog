@@ -1,4 +1,4 @@
-title: 初学go的几个问题
+title: go im问题随手记
 date: 2015/12/6 20:00:00
 tags: [golang]
 categories: golang
