@@ -9,13 +9,13 @@ categories: redis
 
 ## 问题
 我们先来看问题, 有下面这样一组key, 分布在不同的分片(shared)上, 分别执行exists返回结果如下:
-```
-exists test_k1 => false
-exists test_k2 => false
-exists k1 => false
-exists k2 => false
-exists k3 => true
-```
+
+> exists test_k1 => false
+> exists test_k2 => false
+> exists k1 => false
+> exists k2 => false
+> exists k3 => true
+
 
 现在需要分别查test和普通的key, 为了效率我们现在使用pipeline(ShardedJedisPipeline):
 ``` java
